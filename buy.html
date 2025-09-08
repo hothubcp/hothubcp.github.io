@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HotHub - Buy</title>
+<link rel="stylesheet" href="styles/style.css">
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(180deg,#070707 0%, #0e0e0f 100%);
+    color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buy-card {
+    background: rgba(20,20,22,0.95);
+    padding: 36px;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,255,255,0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .buy-card h1 {
+    color: var(--accent);
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .buy-card p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  .btc-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btc-address {
+    background: var(--card);
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-family: monospace;
+    word-break: break-all;
+    display: inline-block;
+  }
+
+  .btc-qr img {
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg,var(--accent),#ff7a9a);
+    transition: transform 0.2s ease;
+    margin-top: 12px;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+  }
+
+</style>
+</head>
+<body>
+  <div class="buy-card">
+    <h1>HotTub - Buy our Service<br>Cheap CP Content</h1>
+    <p>Access our exclusive CP content!
+Send 0.00076 BTC ($84.99) to the address below to unlock CP content.<br>Once payment is confirmed, you’ll get instant and secure access to all materials.</p>
+
+    <div class="btc-container">
+      <div class="btc-address">bc1qlaknm59qlksl6a2y83zerqz4y9a80r309k9ws8</div>
+      <div class="btc-qr">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=bc1qlaknm59qlksl6a2y83zerqz4y9a80r309k9ws8" alt="QR Code BTC">
+      </div>
+    </div>
+
+    <a href="styles/php/confirm.php" class="btn">Confirm Payment</a>
+    <p style="color:var(--muted); font-size:0.85rem;">HotHub Team</p>
+  </div>
+</body>
+</html>
